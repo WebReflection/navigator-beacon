@@ -1,2 +1,2 @@
 /*! (C) WebReflection Mit Style License */
-var main={};
+"sendBeacon"in navigator||(navigator.sendBeacon=function(e,t){var n=new XMLHttpRequest,r;return n.open("POST",e,!1),typeof t=="string"?(r="text/plain;charset=UTF-8",t=unescape(encodeURIComponent(t))):t instanceof Node?(r="text/plain;charset=UTF-8",t=(t.documentElement||t).outerHTML):t.type?r=t.type:r="application/x-www-form-urlencoded",n.setRequestHeader("Content-Type",r),n.send(t),199<n.status&&n.status<400});
